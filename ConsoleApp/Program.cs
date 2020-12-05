@@ -16,6 +16,10 @@ namespace ConsoleApp
             //var rotateArray = new List<int>() { 1, 2, 3, 4, 5 };
             //ArrayDS.RotateLeft(4, rotateArray);
 
+            ArrayDS.MatchingStrings(
+                new string[] { "aba", "baba", "aba", "xzxb" }, 
+                new string[] { "aba", "xzxb", "ab" });
+
             Console.ReadLine();
         }
     }
