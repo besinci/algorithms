@@ -1,6 +1,4 @@
-﻿using ConsoleApp.DS;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace ConsoleApp
 {
@@ -20,10 +18,14 @@ namespace ConsoleApp
             //    new string[] { "aba", "baba", "aba", "xzxb" }, 
             //    new string[] { "aba", "xzxb", "ab" });
 
-            StringBuilderImp sbi = new StringBuilderImp();
-            sbi.Append('!');
-            sbi.Append(" Hello.");
-            Console.WriteLine(sbi.ToString());
+            //StringBuilderImp sbi = new StringBuilderImp();
+            //sbi.Append('!');
+            //sbi.Append(" Hello.");
+            //Console.WriteLine(sbi.ToString());
+
+            var result = Practice.ReverseWord("Muvaffakiyetsizleştiricileştiriveremeyebileceklerimizdenmişsinizcesine");
+            Console.WriteLine(result);
+
 
             Console.ReadLine();
         }
