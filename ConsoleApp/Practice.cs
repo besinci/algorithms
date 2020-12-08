@@ -1,4 +1,9 @@
-﻿namespace ConsoleApp
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConsoleApp
 {
     public class Practice
     {
@@ -36,6 +41,31 @@
             return reversedWord;
         }
 
-        
+        /// <summary>
+        /// Bir cümle içerisinde tekrar eden harfleri bulmaca
+        /// Zorluk: Basit
+        /// Elinizde uzunluğunu bilmediğiniz bir cümle olsun. 
+        /// Bu cümlenin içerisinde kendisini tekrar eden harfleri sayan ve bunu ekrana yazan programı yazın.
+        /// Ek Soru. Algoritmanız Big O notasyonundaki değeri nedir? Daha az karmaşık yapılabilir mi?
+        /// </summary>
+        /// <param name="sentence"></param>
+        /// <returns></returns>
+        public static Hashtable CountRepetitiveCharacters(string sentence)
+        {
+            char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
+
+            Hashtable result = new Hashtable();
+            
+            for (int i = 0; i < alphabet.Length; i++)
+            {
+                var character = alphabet[i];
+                if (sentence.Contains(character))
+                {
+                    result.Add(character, sentence.Where(x => x == character).Count());
+                }
+            }
+
+            return result;
+        }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Linq;
 
 namespace ConsoleApp
 {
@@ -23,9 +25,14 @@ namespace ConsoleApp
             //sbi.Append(" Hello.");
             //Console.WriteLine(sbi.ToString());
 
-            var result = Practice.ReverseWord("Muvaffakiyetsizleştiricileştiriveremeyebileceklerimizdenmişsinizcesine");
-            Console.WriteLine(result);
+            //var result = Practice.ReverseWord("Muvaffakiyetsizleştiricileştiriveremeyebileceklerimizdenmişsinizcesine");
+            //Console.WriteLine(result);
 
+            var result = Practice.CountRepetitiveCharacters("MERHABA CANLARR");
+            foreach (DictionaryEntry item in result)
+            {
+                Console.WriteLine($"charachter: {item.Key} : count: {item.Value}");
+            }
 
             Console.ReadLine();
         }
