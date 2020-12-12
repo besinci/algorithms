@@ -28,11 +28,11 @@ namespace ConsoleApp
             //var result = Practice.ReverseWord("Muvaffakiyetsizleştiricileştiriveremeyebileceklerimizdenmişsinizcesine");
             //Console.WriteLine(result);
 
-            var result = Practice.CountRepetitiveCharacters("MERHABA CANLARR");
-            foreach (DictionaryEntry item in result)
-            {
-                Console.WriteLine($"charachter: {item.Key} : count: {item.Value}");
-            }
+            //var result = Practice.CountRepetitiveCharacters("MERHABA CANLARR");
+            //foreach (DictionaryEntry item in result)
+            //{
+            //    Console.WriteLine($"charachter: {item.Key} : count: {item.Value}");
+            //}
 
             Console.ReadLine();
         }

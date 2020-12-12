@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp
+namespace ConsoleApp.Other
 {
     public class Practice
     {
@@ -66,6 +66,30 @@ namespace ConsoleApp
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// 100'lük not sisteminde kullanıcıdan girilen puan ile harf sonucu bastırma
+        /// Zorluk: Basit
+        /// Aşağıdaki harf notu - puan tablosunu kullanarak girilen puanı 
+        /// harf notuna çeviren bir algoritma geliştirmeniz bekleniyor.
+        /// 
+        /// 90-100   AA
+        /// 80-89    BA
+        /// 70-79    BB
+        /// 65-69    CB
+        /// 
+        /// gibi...
+        /// 
+        /// Örnek : Input: 30 Output: FD
+        /// 
+        /// </summary>
+        /// <param name="score">30</param>
+        /// <returns>FD</returns>
+        public static string FindScore(int score)
+        {
+            // TODO: 
+            return "";
         }
     }
 }

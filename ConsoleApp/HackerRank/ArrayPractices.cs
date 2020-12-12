@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp.DS
+namespace ConsoleApp.HackerRank
 {
-    public class ArrayDS
+    public class ArrayPractices
     {
         /// <summary>
         /// https://www.hackerrank.com/challenges/arrays-ds/problem
@@ -71,7 +71,5 @@ namespace ConsoleApp.DS
             
             return output.ToArray();
         }
-
-
     }
 }

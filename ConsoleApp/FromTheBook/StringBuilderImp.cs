@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp.DS
+﻿namespace ConsoleApp.FromTheBook
 {
     /// <summary>
     /// Exercise: Implementing your own version of StringBuffer class.
