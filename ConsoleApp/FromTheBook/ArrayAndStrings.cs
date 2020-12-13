@@ -1,18 +1,14 @@
-﻿namespace ConsoleApp.FromTheBook
+﻿using System.Linq;
+
+namespace ConsoleApp.FromTheBook
 {
     public class ArrayAndStrings
     {
         // 1.1 Implement an algorithm to determine if a string has all unique characters.
         // What if you cannot use additional data structures?
-        public bool IsAllUnique(string sentence)
+        public bool IsAllUnique(string sentence, int indexPoint = 0)
         {
-            // TODO: 
             return false;
-        }
-
-        // 1.2 Implement a function void reverse(char* str) in C or C++ which reverses a null-terminated string.
-        public void Reverse(char[] str)
-        {
         }
 
         // 1.3 Given two strings, write a method to decide if one is a permutation of the other.
@@ -27,22 +23,49 @@
         // (Note: if implementing in Java, please use a character array so that you can perform
         //  this operation in place.)
         // EXAMPLE 
-        //      Input: "Mr John Smith      "
+        //      Input:  "Mr John Smith      "
         //      Output: "Mr%Jonh%Smith"
         public string ReplaceAllSpaces(char[] arr)
         {
             return "";
         }
-        
+
         // 1.5 Implement a method to perform basic string compression using the counts 
         // of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3.
         // if the "compressed" string would not become smaller than to original string,
         // your method should return the original string.
         public string CompressString(string sentence)
         {
-            return "";
-        }
+            int countPoint = 1;
+            string resultString = "";
 
+            for (int i = 0; i < sentence.Length; i++)
+            {
+                var selectedChar = sentence[i];
+
+                int nextPoint = i + 1;
+
+                if (nextPoint == sentence.Length || selectedChar != sentence[nextPoint])
+                {
+                    resultString += $"{selectedChar}{countPoint}";
+                    countPoint = 1;
+                }
+                else
+                {
+                    countPoint++;
+                }
+            }
+
+            if (resultString.Length >= sentence.Length)
+            {
+                return sentence;
+            }
+            else
+            {
+                return resultString;
+            }
+        }
+        
         // 1.6 Given an image represented by an NxN matrix, where each pixel in the image
         // is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this
         // in place?
