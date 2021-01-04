@@ -27,7 +27,12 @@ namespace ConsoleApp.FromTheBook
         /// <param name="node"></param>
         /// <param name="list"></param>
         public void DeleteMiddleNode(LinkedListNode<char> node, LinkedList<char> list)
-        {   
+        {
+            FindNode(node, list);
+        }
+
+        private void FindNode(LinkedListNode<char> node, LinkedList<char> list)
+        {
         }
     }
 }
