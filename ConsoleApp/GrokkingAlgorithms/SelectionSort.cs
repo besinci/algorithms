@@ -35,5 +35,31 @@
         Answer: Array.
 
          */
+
+
+
+        public void Sort(int[] arr)
+        {
+            int minIndex = 0; // bulunan en küçük sayının index bilgisini tutacak değer.
+            int foundMinimumValue = 0; // bulunan en küçük değer.
+
+            for (int mainIndex = 0; mainIndex < arr.Length; mainIndex++)
+            {
+                minIndex = mainIndex;
+
+                for (int remainingIndex = mainIndex + 1; remainingIndex < arr.Length; remainingIndex++)
+                {
+                    if (arr[remainingIndex] < arr[minIndex])
+                    {
+                        minIndex = remainingIndex;
+                    }
+                }
+
+                foundMinimumValue = arr[minIndex];
+                arr[minIndex] = arr[mainIndex];
+                arr[mainIndex] = foundMinimumValue;
+            }
+
+        }
     }
 }

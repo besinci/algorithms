@@ -11,12 +11,10 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World!");
 
-            //LinkedLists linkedLists = new LinkedLists();
-            //LinkedList<int> test = new LinkedList<int>();
-            //test.First.Value = 1;
-            //test.First.Next.Value = 2;
-            //test.First.Next.Next.Value = 3;
-            
+            var arr = new int[] { 5, 3, 6, 2, 10 };
+            SelectionSort selectionSort = new SelectionSort();
+            selectionSort.Sort(arr);
+
             Console.ReadLine();
         }
     }
