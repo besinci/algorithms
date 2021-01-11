@@ -36,28 +36,26 @@
 
          */
 
-
-
-        public void Sort(int[] arr)
+        public void Sort(int[] unsortedArray)
         {
-            int minIndex = 0; // bulunan en küçük sayının index bilgisini tutacak değer.
+            int currentMinimumValueIndex = 0; // bulunan en küçük sayının index bilgisini tutacak değer.
             int foundMinimumValue = 0; // bulunan en küçük değer.
 
-            for (int mainIndex = 0; mainIndex < arr.Length; mainIndex++)
+            for (int mainIndex = 0; mainIndex < unsortedArray.Length; mainIndex++)
             {
-                minIndex = mainIndex;
+                currentMinimumValueIndex = mainIndex;
 
-                for (int remainingIndex = mainIndex + 1; remainingIndex < arr.Length; remainingIndex++)
+                for (int remainingIndex = mainIndex + 1; remainingIndex < unsortedArray.Length; remainingIndex++)
                 {
-                    if (arr[remainingIndex] < arr[minIndex])
+                    if (unsortedArray[remainingIndex] < unsortedArray[currentMinimumValueIndex])
                     {
-                        minIndex = remainingIndex;
+                        currentMinimumValueIndex = remainingIndex;
                     }
                 }
 
-                foundMinimumValue = arr[minIndex];
-                arr[minIndex] = arr[mainIndex];
-                arr[mainIndex] = foundMinimumValue;
+                foundMinimumValue = unsortedArray[currentMinimumValueIndex];
+                unsortedArray[currentMinimumValueIndex] = unsortedArray[mainIndex];
+                unsortedArray[mainIndex] = foundMinimumValue;
             }
 
         }
