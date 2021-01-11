@@ -11,9 +11,9 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World!");
 
-            var arr = new int[] { 5, 3, 6, 2, 10 };
-            SelectionSort selectionSort = new SelectionSort();
-            selectionSort.Sort(arr);
+            var arr = new int[] { 6, 4, 2 };
+            RecursionAndQuickSort recursionAndQuickSort = new RecursionAndQuickSort();
+            var result = recursionAndQuickSort.RecursionSum(arr);
 
             Console.ReadLine();
         }
