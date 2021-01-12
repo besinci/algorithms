@@ -11,10 +11,10 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World!");
 
-            var arr = new int[] { 6, 4, 2 };
+            var arr = new int[] { 6, 4, 2,  12, 5874, 3 };
             RecursionAndQuickSort recursionAndQuickSort = new RecursionAndQuickSort();
-            var result = recursionAndQuickSort.RecursionSum(arr);
-            var countResult = recursionAndQuickSort.CountNumberInTheList(arr);
+            var result = recursionAndQuickSort.MaximumNumber(arr);
+            
 
             Console.ReadLine();
         }

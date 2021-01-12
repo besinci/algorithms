@@ -41,13 +41,27 @@
             return listItemCount;
         }
 
-        /*
-        
-        4.3 Find the maximum number in a list.
-        4.4 Remember binary search from chapter 1? It’s a divide-and-conquer
-            algorithm, too. Can you come up with the base case and recursive
-            case for binary search? 
+        // 4.3 Find the maximum number in a list.
+        int maxNumber = 0;
+        public int MaximumNumber(int[] arr, int index = 0)
+        {
+            if (arr.Length != index)
+            {
+                if (arr[index] > maxNumber)
+                    maxNumber = arr[index];
 
-         */
+                index++;
+                MaximumNumber(arr, index);
+            }
+
+            return maxNumber;
+        }
+
+        // 4.4 Remember binary search from chapter 1? 
+        //     It’s a divide-and-conquer algorithm, too.
+        //     Can you come up with the base case and recursive case for binary search? 
+        // Answer: I'm not sure but I believe best case would be that list has only 1 or 0 element.
+        //         and recursive case would be take middle element if element is bigger take right side of list, 
+        //         if element is smaller take the left side of the list.
     }
 }
