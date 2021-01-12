@@ -60,8 +60,8 @@
         // 4.4 Remember binary search from chapter 1? 
         //     It’s a divide-and-conquer algorithm, too.
         //     Can you come up with the base case and recursive case for binary search? 
-        // Answer: I'm not sure but I believe best case would be that list has only 1 or 0 element.
-        //         and recursive case would be take middle element if element is bigger take right side of list, 
+        // Answer: I'm not sure but I believe best case would be that the middle number is what we are looking for.
+        //         recursive case would be take middle element if element is bigger take right side of list, 
         //         if element is smaller take the left side of the list.
     }
 }
