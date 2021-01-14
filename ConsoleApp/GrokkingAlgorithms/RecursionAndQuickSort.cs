@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp.GrokkingAlgorithms
+﻿using System.Collections.Generic;
+
+namespace ConsoleApp.GrokkingAlgorithms
 {
     public class RecursionAndQuickSort
     {
@@ -63,5 +65,41 @@
         // Answer: I'm not sure but I believe best case would be that the middle number is what we are looking for.
         //         recursive case would be take middle element if element is bigger take right side of list, 
         //         if element is smaller take the left side of the list.
+        
+        public void Sort(int[] arr, int low, int high)
+        {
+            if (low < high)
+            {
+                int partitionIndex = Partition(arr, low, high);
+
+                Sort(arr, low, partitionIndex - 1);
+                Sort(arr, partitionIndex + 1, high);
+            }
+        }
+
+        private int Partition(int[] arr, int low, int high)
+        {
+            int pivot = arr[high];
+            int lowIndex = (low - 1);
+
+            // reorder list
+            for (int i = low; i < high; i++)
+            {
+                if (arr[i] <= pivot)
+                {
+                    lowIndex++;
+
+                    int temp = arr[lowIndex];
+                    arr[lowIndex] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+
+            int temp1 = arr[lowIndex + 1];
+            arr[lowIndex + 1] = arr[high];
+            arr[high] = temp1;
+
+            return lowIndex + 1;
+        }
     }
 }

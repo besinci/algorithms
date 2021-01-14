@@ -11,10 +11,9 @@ namespace ConsoleApp
         {
             Console.WriteLine("Hello World!");
 
-            var arr = new int[] { 6, 4, 2,  12, 5874, 3 };
+            var arr = new int[] { 72, 12, 6, 33 };
             RecursionAndQuickSort recursionAndQuickSort = new RecursionAndQuickSort();
-            var result = recursionAndQuickSort.MaximumNumber(arr);
-            
+            recursionAndQuickSort.Sort(arr, 0, arr.Length - 1);
 
             Console.ReadLine();
         }
