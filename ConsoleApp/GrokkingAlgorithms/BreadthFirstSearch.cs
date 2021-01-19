@@ -13,8 +13,8 @@
         // 6.3 For these three lists, mark whether each one is valid or invalid.
         // Answer: A = Invalid, B = Valid, C = Invalid
 
-        // I was trying to implement a graph before the bfs implementation.
-        // and i found this in microsoft documentation. I think it'e enough 
+        // I was trying to implement a graph before the bfs implementation
+        // and I found this in Microsoft documentation. I think it's enough 
         // https://docs.microsoft.com/en-us/previous-versions/ms379574(v=vs.80)?redirectedfrom=MSDN#creating-a-graph-class
     }
 }
