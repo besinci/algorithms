@@ -16,5 +16,8 @@
         // I was trying to implement a graph before the bfs implementation
         // and I found this in Microsoft documentation. I think it's enough 
         // https://docs.microsoft.com/en-us/previous-versions/ms379574(v=vs.80)?redirectedfrom=MSDN#creating-a-graph-class
+
+        // 6.4 Here’s a larger graph. Make a valid list for this graph.
+        // Answer: Wake Up => Exercise => Shower => Get Dressed, => Brush Teeth => Eat Breakfast, => Pack Lunch
     }
 }
