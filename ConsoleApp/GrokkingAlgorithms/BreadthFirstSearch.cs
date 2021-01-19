@@ -19,5 +19,8 @@
 
         // 6.4 Here’s a larger graph. Make a valid list for this graph.
         // Answer: Wake Up => Exercise => Shower => Get Dressed, => Brush Teeth => Eat Breakfast, => Pack Lunch
+
+        // 6.5 Which of the following graphs are also trees?
+        // Answer: A, C
     }
 }
