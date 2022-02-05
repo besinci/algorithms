@@ -4,7 +4,7 @@ public static class BinarySearch
 {
     /// <summary>
     /// In example:
-    /// Given ordered array like 1,2,3,4,5,6,7,8,9,10
+    /// Given ordered array like: [1,2,3,4,5,6,7,8,9,10]
     /// We are looking to find 7.
     /// #Iteration: take middle index of the array and check is it the number we are looking for,
     /// if yes return index.
