@@ -1,5 +1,5 @@
 ﻿using Algorihms.SearchAlgorithms;
-using Algorihms.SortAlgorithms;
+using Algorihms.SortAlgorithms.BubbleSort;
 
 Console.WriteLine("Hello, Algorithms!");
 

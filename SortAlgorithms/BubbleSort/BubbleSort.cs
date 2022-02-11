@@ -1,9 +1,9 @@
-namespace Algorihms.SortAlgorithms;
+namespace Algorihms.SortAlgorithms.BubbleSort;
 
 public static class BubbleSort
 {
     /// <summary>
-    /// Check here for explanation: https://github.com/besinci/algorithms/blob/main/SortAlgorithms/bubble-sort.md
+    /// Check here for explanation: https://github.com/besinci/algorithms/blob/main/SortAlgorithms/BubbleSort/bubble-sort.md
     /// </summary>
     /// <param name="arr">Given array.</param>
     /// <returns>Ordered Array</returns>
