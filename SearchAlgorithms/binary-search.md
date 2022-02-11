@@ -19,4 +19,4 @@ Keep in mind: Ordered arrays aren’t faster in every aspect. Insertion in the o
 
 **Trade-off**: Slower Insertion - Faster Search.
 
-You must analyze your app to see what is better fit for you.
+You must analyze your app to see what is the better fit for you.

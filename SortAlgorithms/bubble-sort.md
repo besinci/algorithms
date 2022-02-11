@@ -1,4 +1,4 @@
-# Buble Sort
+# Bubble Sort
 
 ### Summary
 
@@ -10,7 +10,7 @@ Is a very basic sorting algorithm and follows these steps:
 
 2 - If two items are out of order (in other words the left value is greater than the right value) **swap** them.
 
-[ 1, 2, 3, 5 ]  swap → (2,1) —> (1,2)
+[ 1, 2, 3, 5 ]  swap: (2,1) —> (1,2)
 
 (if they already happen to be in the correct order, do nothing for this step)
 
@@ -20,7 +20,7 @@ Is a very basic sorting algorithm and follows these steps:
 
 Repeat steps 1 and 2 until ve reach the end of the array of items that have already been sorted.
 
-### Buble Sort in Action
+### Bubble Sort in Action
 
 Our starting array: [4, 2, 7, 1, 3]
 
@@ -40,19 +40,19 @@ Step #7: They are out of order so swap them. [2, 4, 1, 3, 7]
 
 **We now know for a fact that 7 is in its correct position. Because we kept moving it along to the right until it reached its proper place.**
 
-**This is the reason that this algorithm is called Bubble Sort. In each pass-through the highest unsorted value “bubbles” up to its correct position.**
+**This is the reason that this algorithm is called Bubble Sort. In each pass-through, the highest unsorted value “bubbles” up to its correct position.**
 
 Since we made at least one swap, we need to conduct another one.
 
 **Begin Passthrought #2:** [2, 4, 1, 3, **7**]
 
-Step #8: [2, 4, 1, 3, **7**] pointers → (2, 4) ⇒ they are in correct order, so move on.
+Step #8: [2, 4, 1, 3, **7**] pointers: (2, 4) ⇒ they are in the correct order, so move on.
 
-Step #9: [2, 4, 1, 3, **7**] pointers → (4, 1) ⇒ out of order.
+Step #9: [2, 4, 1, 3, **7**] pointers: (4, 1) ⇒ out of order.
 
 Step #10: swap ⇒ [2, 1, 4, 3, **7**]
 
-Step #11: [2, 1, 4, 3, **7**] pointers → (4, 3) ⇒ out of order.
+Step #11: [2, 1, 4, 3, **7**] pointers: (4, 3) ⇒ out of order.
 
 Step #12: swap ⇒ [2, 1, 3, **4**, **7**]
 
@@ -60,23 +60,23 @@ Step #12: swap ⇒ [2, 1, 3, **4**, **7**]
 
 We now begin Passthrought #3:
 
-Step #13: [2, 1, 3, **4**, **7**] pointers ⇒ (2, 1) ⇒ out of order.
+Step #13: [2, 1, 3, **4**, **7**] pointers: (2, 1) ⇒ out of order.
 
 Step #14: swap ⇒ [1, 2, 3, **4**, **7**]
 
-Step #15: [1, 2, 3, **4**, **7**] pointers ⇒ (2, 3) ⇒ in order, no swap.
+Step #15: [1, 2, 3, **4**, **7**] pointers: (2, 3) ⇒ in order, no swap.
 
 - We now know the 3 has bubbled up to its correct spot. Since we swapped in this passthrough we need to perform another one.
 
 **Passthrough #4:**
 
-Step 16: [1, 2, **3**, **4**, **7**] pointers ⇒ (1, 2) ⇒ They are in order, no swap.
+Step 16: [1, 2, **3**, **4**, **7**] pointers: (1, 2) ⇒ They are in order, no swap.
 
 - We can end the passthrough since all remaining values are already sorted. Now we made a passthrough that didn’t require swaps. We know our array is completely sorted.
 
 [**1, 2, 3**, **4**, **7**]
 
-### Efficiency of Bubble Sort
+### The efficiency of Bubble Sort
 
 This algorithm contains two kinds of steps.
 
@@ -85,7 +85,7 @@ This algorithm contains two kinds of steps.
 
 **How many comparisons take place Bubble Sort?**
 
-Out example has 5 elements #1 passthough had 4 comparisons #2 passthrough 3 comparisons ...etc. 
+Our example has 5 elements #1 passthough had 4 comparisons #2 passthrough 3 comparisons ...etc. 
 
 So that’s 4 + 3 + 2 + 1 = 10 comparisons to put more generally we make (N - 1) + (N - 2) + (N - 3)... + 1 comparisons.
 
