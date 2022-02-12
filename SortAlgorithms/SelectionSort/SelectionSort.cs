@@ -9,7 +9,23 @@ public static class SelectionSort
     /// <returns></returns>
     public static int[] Sort(int[] arr)
     {
-        // TODO: implement
+        for (int iteration = 0; iteration < arr.Length - 1; iteration++)
+        {
+            int lowestValueIndex = iteration;
+            for (int pointer = iteration + 1; pointer < arr.Length; pointer++)
+            {
+                if (arr[pointer] < arr[lowestValueIndex])
+                    lowestValueIndex = pointer;
+            }
+            
+            // if there is a difference make swap
+            if (lowestValueIndex != iteration)
+            {
+                int tempValue = arr[iteration];
+                arr[iteration] = arr[lowestValueIndex];
+                arr[lowestValueIndex] = tempValue;
+            }
+        }
         return arr;
     }
 }
