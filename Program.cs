@@ -1,6 +1,6 @@
-﻿using Algorihms.SearchAlgorithms;
-using Algorihms.SortAlgorithms.BubbleSort;
-using Algorihms.SortAlgorithms.SelectionSort;
+﻿using Algorithms.SearchAlgorithms;
+using Algorithms.SortAlgorithms.BubbleSort;
+using Algorithms.SortAlgorithms.SelectionSort;
 
 Console.WriteLine("Hello, Algorithms!");
 

@@ -1,4 +1,4 @@
-namespace Algorihms.SortAlgorithms.SelectionSort;
+namespace Algorithms.SortAlgorithms.SelectionSort;
 
 public static class SelectionSort
 {

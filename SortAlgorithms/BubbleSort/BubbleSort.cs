@@ -1,4 +1,4 @@
-namespace Algorihms.SortAlgorithms.BubbleSort;
+namespace Algorithms.SortAlgorithms.BubbleSort;
 
 public static class BubbleSort
 {
